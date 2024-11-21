@@ -41,9 +41,9 @@ def getData():
         "background_image": "/static/media/main.jpeg", 
 
         # Styling for success message, blog form, and submissions
-        "success_text": "Welcome to the GGC, that's a lot of grapes you got there!",
+        "success_text": "Welcome to the trenches G!",
         "success_text_color": "white",
-        "success_image": "/static/media/grape_success.jpg",
+        "success_image": "/static/media/main.jpeg",
         "success_image_width": "100%",  
 
         # Blog form title and styling

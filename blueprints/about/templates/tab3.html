@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="home-content" 
+     style="
+        {% if content_boxed %} 
+            background-color: {{ box_background }};
+            border: {{ box_border }};
+            padding: {{ box_padding }};
+            margin: {{ box_margin }};
+        {% endif %}
+     ">
+
+    <!-- Heading Container with customizable styling -->
+    <div style="
+        display: block;
+        text-align: {{ heading_alignment }};
+        padding-bottom: {{ heading_bottom_padding }};
+    ">
+        <div style="
+            display: {{ heading_display }};
+            background-color: {{ heading_background }};
+            border: {{ heading_border }};
+            padding: {{ heading_container_padding }};
+            margin: {{ heading_margin }};
+        ">
+            <h1 style="
+                color: {{ heading_color }};
+                font-family: {{ heading_font }};
+                font-size: {{ heading_font_size }};
+                font-weight: {{ heading_font_weight }};
+                padding: {{ heading_padding }};
+                margin: 0;
+            ">
+                {{ main_heading }}
+            </h1>
+        </div>
+    </div>
+
+    <!-- Paragraph Container with customizable styling -->
+    <div style="
+        display: block;
+        text-align: {{ paragraph_alignment }};
+        padding-bottom: {{ paragraph_bottom_padding }};
+    ">
+        <div style="
+            display: {{ paragraph_display }};
+            background-color: {{ paragraph_background }};
+            border: {{ paragraph_border }};
+            padding: {{ paragraph_container_padding }};
+            margin: {{ paragraph_margin }};
+        ">
+            <p style="
+                color: {{ paragraph_color }};
+                font-family: {{ paragraph_font }};
+                font-size: {{ paragraph_font_size }};
+                font-weight: {{ paragraph_font_weight }};
+                padding: {{ paragraph_padding }};
+                margin: 0;
+            ">
+                {{ paragraphs }}
+            </p>
+        </div>
+    </div>
+
+    <!-- Image Container with customizable styling -->
+    <div style="
+        text-align: {{ page_image_alignment }};
+        padding-bottom: {{ image_bottom_padding }};
+    ">
+
+    </div>
+    <!-- Roadmap Steps with tighter border around text and larger font size -->
+    <div class="flow-container" style="padding-top: 2em; text-align: center;">
+        <div class="step" style="background-color: lightgray; font-size: 10em; padding: 20px 30px; display: inline-block;">✓ Get abandoned by our trench leader</div>
+        <div class="arrow" style="font-size: 20em; color: orange; margin: 10px;">↓</div>
+        <div class="step" style="background-color: lightgray; font-size: 10em; padding: 20px 30px; display: inline-block;">✓ Use knowledge obtained from the TRW and continue through the trenches</div>
+        <div class="arrow" style="font-size: 20em; color: orange; margin: 10px;">↓</div>
+        <div class="step" style="background-color: lightgray; font-size: 10em; padding: 20px 30px; display: inline-block;">✓ Graciously receive Trate Terminal from TRW</div>
+        <div class="arrow" style="font-size: 20em; color: orange; margin: 10px;">↓</div>
+        <div class="step" style="background-color: lightgray; font-size: 10em; padding: 20px 30px; display: inline-block;">Make it out the trenches</div>
+    </div>
+
+</div>
+
+
+<script src="https://terminal.jup.ag/main-v2.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        function initializeJupiter() {
+            window.Jupiter.init({
+                displayMode: "widget",
+                integratedTargetId: "integrated-terminal",
+                strictTokenList: false,
+                endpoint: "https://long-greatest-crater.solana-mainnet.quiknode.pro/84855c0db92789861c7c482ef6dbd5e52b1cfbc7",
+                formProps: {
+                    fixedOutputMint: true,
+                    swapMode: "ExactIn",
+                    initialOutputMint: "3Sx6ZuHGbzi24mhR8QfRNyXQXgJFH5H295rzELwRpump",
+                    platformFeeBips: 20,
+                    platformFeeAccount: "HJrDpLcmMAkVKa5CRBiqqQxnmD2tRW7AE7YkNXTwwg68",
+                },
+                onSuccess: ({ txid, swapResult }) => {
+                    console.log(`Swap successful! Transaction ID: ${txid}`);
+                    const successMessage = document.getElementById('success-message');
+                    successMessage.style.display = 'block';
+                    if (typeof window.Jupiter.reset === "function") {
+                        window.Jupiter.reset();
+                    }
+                    setTimeout(() => {
+                        initializeJupiter();
+                    }, 2000);
+                },
+                onSwapError: ({ error }) => {
+                    console.error('Swap Error:', error);
+                }
+            });
+        }
+        initializeJupiter();
+    });
+</script>
+{% endblock %}

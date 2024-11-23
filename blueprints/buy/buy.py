@@ -27,36 +27,39 @@ def getData():
     submissions = load_submissions()
 
     page_config = {
-        "main_heading": "Get out the trenches!",                  
-        "heading_color": "white",                            
+        "main_heading": "Small fis, big sea!",                  
+        "heading_color": "blue",                            
         "heading_font": "Arial, sans-serif",                  
         "heading_font_size": "3em",                           
         "heading_font_weight": "bold",                        
         "heading_alignment": "center",                        
-        "paragraphs": "Time to hustle",  
-        "paragraph_color": "white",                           
+        "paragraphs": "keep swimming little guy",  
+        "paragraph_color": "blue",                           
         "paragraph_font": "Georgia, serif",                   
         "paragraph_font_size": "1.5em",                       
         "paragraph_alignment": "center",                      
-        "background_image": "/static/media/main.jpeg", 
+        "background_image": "/static/media/fis.jpg", 
 
         # Styling for success message, blog form, and submissions
-        "success_text": "Welcome to the trenches G!",
-        "success_text_color": "white",
-        "success_image": "/static/media/main.jpeg",
+        "success_text": "u fried da fis!",
+        "success_text_color": "blue",
+        "success_image": "/static/media/fis_fry.jpg",
         "success_image_width": "100%",  
 
         # Blog form title and styling
-        "blog_title": "how will you make it out the photon trenches?",
-        "blog_title_color": "black",
+        "blog_title": "What do you like about the fis?",
+        "blog_title_color": "orange",
         "blog_title_font_size": "3em",
+        "blog_title_padding": "10px",
+        "form_label_padding": "10px",
 
-        "form_background_color": "gray",
+
+        "form_background_color": "blue",
 
         # Form labels and styling for input fields
         "form_label_username": "Username:",
-        "form_label_content": "Comment:",
-        "form_label_text_color": "black",
+        "form_label_content": "Comment:  ",
+        "form_label_text_color": "orange",
         "form_label_font_size": "2em",
         "button_background_color": "#444",
         "button_text_color": "#fff",

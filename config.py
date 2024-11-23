@@ -9,8 +9,8 @@ config = {
     "tab3_route": "about",
     "tg_tag": "YourTelegramTag",
     "x_tag": "YourXHandle",
-    "CA": "Csp4KDaZjqUtbxkMC89saud1CxjDh6uN1iGVQiX3pump",
-    "footer_text": "You got this G.",
+    "CA": "F6vRYD1pWJy6uMpTMTUeTsTMU4xruxpf6fGZergvpump",
+    "footer_text": "fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy",
     "currentPage": "Home Page",
     # Navbar and footer global styles
     "navbar_bg_color": "orange",       # Navbar background color

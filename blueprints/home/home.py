@@ -5,7 +5,7 @@ home_bp = Blueprint('home', __name__, template_folder='templates')
 @home_bp.route('/')
 def home():
     page_config = {
-        "main_heading": "fis life",             # Main heading text
+        "main_heading": "fis life (CA:F6vRYD1pWJy6uMpTMTUeTsTMU4xruxpf6fGZergvpump)",             # Main heading text
         "heading_color": "blue",                               # Heading text color
         "heading_font": "Arial, sans-serif",                    # Font family for heading
         "heading_font_size": "4em",                             # Font size for heading

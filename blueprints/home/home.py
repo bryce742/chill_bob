@@ -5,7 +5,7 @@ home_bp = Blueprint('home', __name__, template_folder='templates')
 @home_bp.route('/')
 def home():
     page_config = {
-        "main_heading": "fis life (CA:F6vRYD1pWJy6uMpTMTUeTsTMU4xruxpf6fGZergvpump)",             # Main heading text
+        "main_heading": "fis life",             # Main heading text
         "heading_color": "blue",                               # Heading text color
         "heading_font": "Arial, sans-serif",                    # Font family for heading
         "heading_font_size": "4em",                             # Font size for heading
@@ -19,7 +19,7 @@ def home():
         "heading_margin": "auto" if "center" else "0",          # Center if alignment is 'center'
         "heading_bottom_padding": "20px",                       # Padding below heading
 
-        "paragraphs": "just fisin til caught",         # Main paragraph text
+        "paragraphs": "CA:F6vRYD1pWJy6uMpTMTUeTsTMU4xruxpf6fGZergvpump",         # Main paragraph text
         "paragraph_color": "blue",                             # Paragraph text color
         "paragraph_font": "Georgia, serif",                     # Font family for paragraph
         "paragraph_font_size": "2em",                           # Font size for paragraph

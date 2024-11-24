@@ -9,7 +9,7 @@ config = {
     "tab3_route": "about",
     "tg_tag": "YourTelegramTag",
     "x_tag": "YourXHandle",
-    "CA": "5PKX7e7e665n7mwrDtYzu6pL6deczW2dgm3xfG43pump",
+    "CA": "AFTBPPuc3f4ZV5ATDTJDDsvHm5fSbMcGrh6DBHEDpump",
     "footer_text": "chill bro",
     "currentPage": "Home Page",
     # Navbar and footer global styles

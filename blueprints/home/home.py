@@ -19,7 +19,7 @@ def home():
         "heading_margin": "auto" if "center" else "0",          # Center if alignment is 'center'
         "heading_bottom_padding": "20px",                       # Padding below heading
 
-        "paragraphs": "CA: coming soon",         # Main paragraph text
+        "paragraphs": "CA: AFTBPPuc3f4ZV5ATDTJDDsvHm5fSbMcGrh6DBHEDpump",         # Main paragraph text
         "paragraph_color": "black",                             # Paragraph text color
         "paragraph_font": "Georgia, serif",                     # Font family for paragraph
         "paragraph_font_size": "2em",                           # Font size for paragraph

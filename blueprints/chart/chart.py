@@ -23,19 +23,19 @@ def save_votes(votes):
 @chart_bp.route('/')
 def tab2_home():
     page_config = {
-        "background_image": "/static/media/fis.jpg",
+        "background_image": "/static/media/main_background.png",
         
         # Customizable text, color, and font size for headings and buttons
-        "chart_heading_text": "fisy is live!",
-        "chart_heading_color": "blue",
+        "chart_heading_text": "watch bob chill",
+        "chart_heading_color": "black",
         "chart_heading_font_size": "8em",
         
-        "vote_moon_text": "fis",
-        "vote_moon_color": "orange",
+        "vote_moon_text": "Bob",
+        "vote_moon_color": "black",
         "vote_moon_font_size": "1.2em",
 
-        "vote_grape_text": "fish",
-        "vote_grape_color": "orange",
+        "vote_grape_text": "Marley",
+        "vote_grape_color": "black",
         "vote_grape_font_size": "1.2em"
     }
     merged_config = {**current_app.config, **page_config}

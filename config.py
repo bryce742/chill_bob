@@ -9,12 +9,12 @@ config = {
     "tab3_route": "about",
     "tg_tag": "YourTelegramTag",
     "x_tag": "YourXHandle",
-    "CA": "F6vRYD1pWJy6uMpTMTUeTsTMU4xruxpf6fGZergvpump",
-    "footer_text": "fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy fisy",
+    "CA": "5PKX7e7e665n7mwrDtYzu6pL6deczW2dgm3xfG43pump",
+    "footer_text": "chill bro",
     "currentPage": "Home Page",
     # Navbar and footer global styles
-    "navbar_bg_color": "orange",       # Navbar background color
-    "navbar_text_color": "black",       # Navbar text color
+    "navbar_bg_color": "black",       # Navbar background color
+    "navbar_text_color": "white",       # Navbar text color
     "footer_bg_color": "#e9ecef",       # Footer background color
     "footer_text_color": "black",        # Footer text color
     "JUPITER_ENDPOINT": "https://long-greatest-crater.solana-mainnet.quiknode.pro/84855c0db92789861c7c482ef6dbd5e52b1cfbc7",

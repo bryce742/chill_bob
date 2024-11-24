@@ -5,8 +5,8 @@ home_bp = Blueprint('home', __name__, template_folder='templates')
 @home_bp.route('/')
 def home():
     page_config = {
-        "main_heading": "fis life",             # Main heading text
-        "heading_color": "blue",                               # Heading text color
+        "main_heading": "life is chill (sometimes)",             # Main heading text
+        "heading_color": "black",                               # Heading text color
         "heading_font": "Arial, sans-serif",                    # Font family for heading
         "heading_font_size": "4em",                             # Font size for heading
         "heading_font_weight": "bold",                          # Font weight for heading
@@ -19,8 +19,8 @@ def home():
         "heading_margin": "auto" if "center" else "0",          # Center if alignment is 'center'
         "heading_bottom_padding": "20px",                       # Padding below heading
 
-        "paragraphs": "CA:F6vRYD1pWJy6uMpTMTUeTsTMU4xruxpf6fGZergvpump",         # Main paragraph text
-        "paragraph_color": "blue",                             # Paragraph text color
+        "paragraphs": "CA: coming soon",         # Main paragraph text
+        "paragraph_color": "black",                             # Paragraph text color
         "paragraph_font": "Georgia, serif",                     # Font family for paragraph
         "paragraph_font_size": "2em",                           # Font size for paragraph
         "paragraph_font_weight": "",                            # Font weight for paragraph
@@ -34,7 +34,7 @@ def home():
         "paragraph_bottom_padding": "20px",                     # Padding below paragraph
 
         #image configuration
-        "page_image": "/static/media/fis_home.jpg",  # Image file path
+        "page_image": "/static/media/bob_marley.png",  # Image file path
         "page_image_width": "50%",                    # Width (can be %, px, or auto)
         "page_image_height": "auto",                  # Height (can be %, px, or auto)
         "page_image_opacity": "0.9",                  # Opacity (0 to 1)
@@ -49,7 +49,7 @@ def home():
         "box_padding": "0px",                                   # Padding inside the box
         "box_margin": "0px auto",                               # Margin around the box
 
-        "background_image": "/static/media/fis.jpg" # Background image URL for the page
+        "background_image": "/static/media/main_background.png" # Background image URL for the page
     }
     merged_config = {**current_app.config, **page_config}
     return render_template('home.html', **merged_config)

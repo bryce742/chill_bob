@@ -5,8 +5,8 @@ about_bp = Blueprint('about', __name__, template_folder='templates')
 @about_bp.route('/')
 def tab3_home():
     page_config = {
-        "main_heading": "swimming upstream",             # Main heading text
-        "heading_color": "blue",                               # Heading text color
+        "main_heading": "how to chill",             # Main heading text
+        "heading_color": "black",                               # Heading text color
         "heading_font": "Arial, sans-serif",                    # Font family for heading
         "heading_font_size": "4em",                             # Font size for heading
         "heading_font_weight": "bold",                          # Font weight for heading
@@ -19,8 +19,8 @@ def tab3_home():
         "heading_margin": "auto" if "center" else "0",          # Center if alignment is 'center'
         "heading_bottom_padding": "20px",                       # Padding below heading
 
-        "paragraphs": "fis cycle coded",         # Main paragraph text
-        "paragraph_color": "blue",                             # Paragraph text color
+        "paragraphs": "by Bob Marley",         # Main paragraph text
+        "paragraph_color": "black",                             # Paragraph text color
         "paragraph_font": "Georgia, serif",                     # Font family for paragraph
         "paragraph_font_size": "2em",                           # Font size for paragraph
         "paragraph_font_weight": "",                            # Font weight for paragraph
@@ -40,7 +40,7 @@ def tab3_home():
         "box_padding": "0px",                                   # Padding inside the box
         "box_margin": "0px auto",                               # Margin around the box
 
-        "background_image": "/static/media/fis_home.jpg" # Background image URL for the page
+        "background_image": "/static/media/main_background.png" # Background image URL for the page
     }
     merged_config = {**current_app.config, **page_config}
     return render_template('tab3.html', **merged_config)

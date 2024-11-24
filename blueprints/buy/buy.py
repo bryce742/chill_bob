@@ -38,7 +38,7 @@ def getData():
         "paragraph_font": "Georgia, serif",                   
         "paragraph_font_size": "1.5em",                       
         "paragraph_alignment": "center",                      
-        "background_image": "/static/media/marley_2.jpeg", 
+        "background_image": "/static/media/main_background.png", 
 
         # Styling for success message, blog form, and submissions
         "success_text": "u hella chill!",

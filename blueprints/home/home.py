@@ -34,7 +34,7 @@ def home():
         "paragraph_bottom_padding": "20px",                     # Padding below paragraph
 
         #image configuration
-        "page_image": "/static/media/bob_marley.png",  # Image file path
+        "page_image": "/static/media/marley_2.jpeg",  # Image file path
         "page_image_width": "50%",                    # Width (can be %, px, or auto)
         "page_image_height": "auto",                  # Height (can be %, px, or auto)
         "page_image_opacity": "0.9",                  # Opacity (0 to 1)
